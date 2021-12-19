@@ -9,8 +9,8 @@ from tensorflow.keras.losses import binary_crossentropy
 from tensorflow.keras import backend as K
 # from keras import regularizers
 
-from .unet import create_convolution_block, concatenate
-from ..metrics import weighted_dice_coefficient_loss
+from unet3d.model.unet import create_convolution_block, concatenate
+from unet3d.metrics import weighted_dice_coefficient_loss
 
 import tensorflow as tf
 

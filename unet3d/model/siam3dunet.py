@@ -2,15 +2,15 @@ from functools import partial
 
 from tensorflow.keras.layers import Input, LeakyReLU, Add, UpSampling3D, Activation, SpatialDropout3D, Conv3D, Reshape, Dense, \
     Flatten, Dropout, Subtract, BatchNormalization, GlobalAveragePooling3D
-# from keras.layers.core import Lambda
+from tensorflow.keras.layers import Lambda
 from tensorflow.keras.models import Model
 from tensorflow.keras.optimizers import Adam, SGD
 from tensorflow.keras.losses import binary_crossentropy
 from tensorflow.keras import backend as K
 # from keras import regularizers
 
-from .unet import create_convolution_block, concatenate
-from ..metrics import weighted_dice_coefficient_loss
+from unet3d.model.unet import create_convolution_block, concatenate
+from unet3d.metrics import weighted_dice_coefficient_loss
 
 # from keras.utils.training_utils import multi_gpu_model
 

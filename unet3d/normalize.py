@@ -3,8 +3,8 @@ import os
 import numpy as np
 from nilearn.image import new_img_like
 
-from unet3d.utils import resize, read_image_files
-from .utils import crop_img, crop_img_to, read_image
+from unet3d.utils.utils import resize, read_image_files, read_image
+from unet3d.utils.nilearn_custom_utils.nilearn_utils import crop_img, crop_img_to
 
 
 def find_downsized_info(training_data_files, input_shape):
